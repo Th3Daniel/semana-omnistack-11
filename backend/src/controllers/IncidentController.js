@@ -17,7 +17,7 @@ module.exports= {
         'ongs.city',
         'ongs.uf'
       ]);
-    response.header('xTotalCount', count['count(*)']);
+    response.header('x-total-count', count['count(*)']);
     return response.json(incidents)
   },
 
